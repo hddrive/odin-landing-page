@@ -1,0 +1,99 @@
+body {
+  font-family: Roboto, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* parent container */
+.header {
+  background-color: #1f2937;
+}
+
+/* child of .header */
+.logo {
+  font-size: 24px;
+  color: #f9faf8
+}
+
+/* child of .header */
+.links {
+
+}
+
+/* parent container */
+.hero {
+  background-color: #1f2937;
+}
+
+/* child of .hero */
+.hero-text {
+  font-size: 48px;
+  font-weight: 900;
+  color: #f9faf8;
+}
+
+/* parent container */
+.information {
+
+}
+
+/* childe of .information */
+.info-header {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1f2937;
+}
+
+/* parent container */
+.quote {
+  background-color: #e5e7eb;
+}
+
+
+/* parent container */
+.action {
+  background-color: #3882f6;
+
+}
+
+/* child of .action */
+.call-to-action {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* parent container */
+.footer {
+  background-color: #1f2937;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 300px;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, .hero-subtext, .howto-action {
+  color: #e5e7eb;
+  font-size: 18px;
+}
+
+button {
+  background-color: #3882f6;
+  border: 2px solid white;
+  border-radius: 6px;
+  color: white;
+}
