@@ -7,8 +7,24 @@ body {
 }
 
 /* parent container */
-.header {
+.hero {
   background-color: #1f2937;
+  padding: 0 240px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+/* child .hero / parent container */
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+/* child .hero / parent container */
+.links-image {
+  display: flex;
+  flex-direction: column;
 }
 
 /* child of .header */
@@ -17,15 +33,14 @@ body {
   color: #f9faf8
 }
 
-/* child of .header */
+/* ul - child of .header */
 .links {
-
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
 }
 
-/* parent container */
-.hero {
-  background-color: #1f2937;
-}
+
 
 /* child of .hero */
 .hero-text {
@@ -34,10 +49,14 @@ body {
   color: #f9faf8;
 }
 
-/* parent container */
-.information {
+/* .main-image {
+  display: flex;
+} */
 
-}
+/* parent container */
+/* .information {
+
+} */
 
 /* childe of .information */
 .info-header {
@@ -55,7 +74,8 @@ body {
 /* parent container */
 .action {
   background-color: #3882f6;
-
+  margin: 0 240px;
+  border-radius: 4px;
 }
 
 /* child of .action */
@@ -93,7 +113,12 @@ a, .hero-subtext, .howto-action {
 
 button {
   background-color: #3882f6;
-  border: 2px solid white;
+  border: 2px none;
   border-radius: 6px;
   color: white;
+}
+
+/* sets border for call to action button */
+.action .signup {
+  border: 2px solid white;
 }
