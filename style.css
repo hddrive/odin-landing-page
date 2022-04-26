@@ -9,23 +9,34 @@ body {
 /* parent container */
 .hero {
   background-color: #1f2937;
-  padding: 0 240px;
+  padding: 0 200px;
+  height: 440px;
   display: flex;
-  justify-content: space-between;
-  /* align-items: center; */
+  flex-direction: column;
 }
 
 /* child .hero / parent container */
 .header {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
 }
 
 /* child .hero / parent container */
-.links-image {
+.sub-hero {
   display: flex;
-  flex-direction: column;
+  flex: auto;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
 }
+
+/* child .sub-hero / parent container */
+.main-image {
+  margin-left: 36px;
+}
+
 
 /* child of .header */
 .logo {
@@ -33,49 +44,70 @@ body {
   color: #f9faf8
 }
 
-/* ul - child of .header */
+/* ul - child of .header*/
 .links {
   display: flex;
   flex-direction: row;
-  gap: 12px;
+  gap: 24px;
 }
 
-
-
-/* child of .hero */
+/* child of .header */
 .hero-text {
   font-size: 48px;
   font-weight: 900;
   color: #f9faf8;
 }
 
-/* .main-image {
-  display: flex;
-} */
-
 /* parent container */
-/* .information {
+.information {
+  display: flex;
+  justify-content: center;
+  gap: 48px;
+  margin-bottom: 100px;
+}
 
-} */
 
-/* childe of .information */
 .info-header {
   font-size: 36px;
   font-weight: 900;
   color: #1f2937;
+  margin: 36px 0;
+  align-self: center;
+}
+
+/* child of .information */
+.info {
+  max-width: 180px;
+  text-align: center;
+}
+
+.info img {
+  border-radius: 8px;
+  border: 3px solid #3882f6;
+  
 }
 
 /* parent container */
 .quote {
   background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
+  padding: 80px 400px;
 }
 
 
 /* parent container */
 .action {
   background-color: #3882f6;
-  margin: 0 240px;
+  margin: 84px 200px;
+  padding: 36px 96px;
   border-radius: 4px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
 }
 
 /* child of .action */
@@ -85,11 +117,25 @@ body {
   font-weight: 600;
 }
 
+.call-to-action .howto-action {
+  font-weight: 300;
+  font-size: 16px;
+}
+
 /* parent container */
 .footer {
   background-color: #1f2937;
+  padding: 32px 0;
   color: white;
+  text-align: center;
 }
+
+.main-image  img {
+  width: 400px;
+  height: auto;
+}
+
+
 
 ul {
   list-style-type: none;
@@ -98,7 +144,7 @@ ul {
 }
 
 img {
-  width: 300px;
+  width: 180px;
   height: auto;
 }
 
@@ -116,9 +162,12 @@ button {
   border: 2px none;
   border-radius: 6px;
   color: white;
+  font-size: 18px;
+  margin-top: 8px;
+  padding: 8px 36px;
 }
 
-/* sets border for call to action button */
+/* call to action button */
 .action .signup {
   border: 2px solid white;
 }
