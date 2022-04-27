@@ -10,7 +10,7 @@ body {
 .hero {
   background-color: #1f2937;
   padding: 0 200px;
-  height: 440px;
+  height: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -19,6 +19,7 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
+  flex: 0;
   align-items: center;
   margin-top: 24px;
 }
@@ -37,17 +38,24 @@ body {
   margin-left: 36px;
 }
 
+.main-image  img {
+  width: 400px;
+  height: auto;
+}
 
 /* child of .header */
 .logo {
   font-size: 24px;
-  color: #f9faf8
+  color: #f9faf8;
+  min-width: 254px;
 }
 
 /* ul - child of .header*/
 .links {
   display: flex;
-  flex-direction: row;
+  justify-content: flex-end;
+  min-width: 305px;
+  margin-left: 36px;
   gap: 24px;
 }
 
@@ -66,7 +74,7 @@ body {
   margin-bottom: 100px;
 }
 
-
+/* stand-alone but part of information panel */
 .info-header {
   font-size: 36px;
   font-weight: 900;
@@ -98,6 +106,21 @@ body {
   padding: 80px 400px;
 }
 
+.quote .text {
+  font-size: 36px;
+  font-weight: lighter;
+  font-style: italic;
+  color: #1f2937;
+  min-width: 800px;
+}
+
+/* child .quote */
+.sign-off {
+  align-self: flex-end;
+  font-size: 20px;
+  font-weight: 600;
+  min-width: 310px;
+}
 
 /* parent container */
 .action {
@@ -105,6 +128,7 @@ body {
   margin: 84px 200px;
   padding: 36px 96px;
   border-radius: 4px;
+  min-width: 550px;
   justify-content: space-between;
   align-items: center;
   display: flex;
@@ -122,6 +146,11 @@ body {
   font-size: 16px;
 }
 
+/* call to action button */
+.action .signup {
+  border: 2px solid white;
+}
+
 /* parent container */
 .footer {
   background-color: #1f2937;
@@ -129,13 +158,6 @@ body {
   color: white;
   text-align: center;
 }
-
-.main-image  img {
-  width: 400px;
-  height: auto;
-}
-
-
 
 ul {
   list-style-type: none;
@@ -165,9 +187,4 @@ button {
   font-size: 18px;
   margin-top: 8px;
   padding: 8px 36px;
-}
-
-/* call to action button */
-.action .signup {
-  border: 2px solid white;
 }
